@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181129 10:32:36.561" generator="Robot 3.0.4 (Python 2.7.6 on linux2)">
+<suite source="/home/shaik/Documents/Proj_directory/vam_automate_generate.robot" id="s1" name="Vam Automate Generate">
+<test id="s1-t1" name="test case1">
+<kw name="Testcases" library="vam_automate">
+<arguments>
+<arg>1,what is the weather in bangalore,1,NULL,1,vam_record_transcribe,weather;rain;bengaluru;bangalore;cloudy;thunderstorms;temperature;forecast,Right now in Bengaluru cloudy,Its raining in Bengaluru,Pass,Its raining in,weather.wav,1</arg>
+</arguments>
+<status status="PASS" endtime="20181129 10:33:07.642" starttime="20181129 10:32:36.586"></status>
+</kw>
+<kw name="test_case_result">
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>result_file.txt</arg>
+</arguments>
+<assign>
+<var>${Result}</var>
+</assign>
+<msg timestamp="20181129 10:33:07.644" html="yes" level="INFO">Getting file '&lt;a href="file:///home/shaik/Documents/Proj_directory/result_file.txt"&gt;/home/shaik/Documents/Proj_directory/result_file.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20181129 10:33:07.644" level="INFO">${Result} = Test case passed...</msg>
+<status status="PASS" endtime="20181129 10:33:07.644" starttime="20181129 10:33:07.643"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Result}</arg>
+</arguments>
+<msg timestamp="20181129 10:33:07.644" level="INFO">Test case passed...</msg>
+<status status="PASS" endtime="20181129 10:33:07.644" starttime="20181129 10:33:07.644"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${Result}</arg>
+<arg>Test case passed...</arg>
+</arguments>
+<status status="PASS" endtime="20181129 10:33:07.645" starttime="20181129 10:33:07.645"></status>
+</kw>
+<status status="PASS" endtime="20181129 10:33:07.645" starttime="20181129 10:33:07.643"></status>
+</kw>
+<tags>
+<tag>Text_Match</tag>
+</tags>
+<status status="PASS" endtime="20181129 10:33:07.645" critical="yes" starttime="20181129 10:32:36.585"></status>
+</test>
+<test id="s1-t2" name="test case2">
+<kw name="Testcases" library="vam_automate">
+<arguments>
+<arg>2,set the volume to thirty percent,1,NULL,1,vam_volume_up,tell me about california,set the volume to ninety percent</arg>
+</arguments>
+<status status="PASS" endtime="20181129 10:34:13.707" starttime="20181129 10:33:07.646"></status>
+</kw>
+<kw name="test_case_result">
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>result_file.txt</arg>
+</arguments>
+<assign>
+<var>${Result}</var>
+</assign>
+<msg timestamp="20181129 10:34:13.708" html="yes" level="INFO">Getting file '&lt;a href="file:///home/shaik/Documents/Proj_directory/result_file.txt"&gt;/home/shaik/Documents/Proj_directory/result_file.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20181129 10:34:13.709" level="INFO">${Result} = Test case passed...</msg>
+<status status="PASS" endtime="20181129 10:34:13.709" starttime="20181129 10:34:13.708"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Result}</arg>
+</arguments>
+<msg timestamp="20181129 10:34:13.709" level="INFO">Test case passed...</msg>
+<status status="PASS" endtime="20181129 10:34:13.709" starttime="20181129 10:34:13.709"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${Result}</arg>
+<arg>Test case passed...</arg>
+</arguments>
+<status status="PASS" endtime="20181129 10:34:13.710" starttime="20181129 10:34:13.709"></status>
+</kw>
+<status status="PASS" endtime="20181129 10:34:13.710" starttime="20181129 10:34:13.707"></status>
+</kw>
+<tags>
+<tag>volume_checker</tag>
+</tags>
+<status status="PASS" endtime="20181129 10:34:13.710" critical="yes" starttime="20181129 10:33:07.646"></status>
+</test>
+<test id="s1-t3" name="test case3">
+<kw name="Testcases" library="vam_automate">
+<arguments>
+<arg>3,what is the date today,1,NULL,1,vam_record_transcribe,2018;wednesday;thursday;friday;monday;tuesday,it will tell today date,Pass</arg>
+</arguments>
+<status status="PASS" endtime="20181129 10:34:38.457" starttime="20181129 10:34:13.711"></status>
+</kw>
+<kw name="test_case_result">
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>result_file.txt</arg>
+</arguments>
+<assign>
+<var>${Result}</var>
+</assign>
+<msg timestamp="20181129 10:34:38.459" html="yes" level="INFO">Getting file '&lt;a href="file:///home/shaik/Documents/Proj_directory/result_file.txt"&gt;/home/shaik/Documents/Proj_directory/result_file.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20181129 10:34:38.459" level="INFO">${Result} = Test case passed...</msg>
+<status status="PASS" endtime="20181129 10:34:38.459" starttime="20181129 10:34:38.458"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Result}</arg>
+</arguments>
+<msg timestamp="20181129 10:34:38.460" level="INFO">Test case passed...</msg>
+<status status="PASS" endtime="20181129 10:34:38.460" starttime="20181129 10:34:38.459"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${Result}</arg>
+<arg>Test case passed...</arg>
+</arguments>
+<status status="PASS" endtime="20181129 10:34:38.460" starttime="20181129 10:34:38.460"></status>
+</kw>
+<status status="PASS" endtime="20181129 10:34:38.460" starttime="20181129 10:34:38.458"></status>
+</kw>
+<tags>
+<tag>Text_Match</tag>
+</tags>
+<status status="PASS" endtime="20181129 10:34:38.460" critical="yes" starttime="20181129 10:34:13.711"></status>
+</test>
+<test id="s1-t4" name="test case4">
+<kw name="Testcases" library="vam_automate">
+<arguments>
+<arg>7,play lungi dance on gaana,1,my_command.wav,1,vam_record_identify_music,songtitle.wav,yo yo honey singh;lungi dance,</arg>
+</arguments>
+<status status="PASS" endtime="20181129 10:35:14.016" starttime="20181129 10:34:38.461"></status>
+</kw>
+<kw name="test_case_result">
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>result_file.txt</arg>
+</arguments>
+<assign>
+<var>${Result}</var>
+</assign>
+<msg timestamp="20181129 10:35:14.017" html="yes" level="INFO">Getting file '&lt;a href="file:///home/shaik/Documents/Proj_directory/result_file.txt"&gt;/home/shaik/Documents/Proj_directory/result_file.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20181129 10:35:14.018" level="INFO">${Result} = Test case failed...</msg>
+<status status="PASS" endtime="20181129 10:35:14.018" starttime="20181129 10:35:14.017"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Result}</arg>
+</arguments>
+<msg timestamp="20181129 10:35:14.018" level="INFO">Test case failed...</msg>
+<status status="PASS" endtime="20181129 10:35:14.018" starttime="20181129 10:35:14.018"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${Result}</arg>
+<arg>Test case passed...</arg>
+</arguments>
+<msg timestamp="20181129 10:35:14.018" level="FAIL">Test case failed... != Test case passed...</msg>
+<status status="FAIL" endtime="20181129 10:35:14.018" starttime="20181129 10:35:14.018"></status>
+</kw>
+<status status="FAIL" endtime="20181129 10:35:14.019" starttime="20181129 10:35:14.017"></status>
+</kw>
+<tags>
+<tag>music_identifier</tag>
+</tags>
+<status status="FAIL" endtime="20181129 10:35:14.019" critical="yes" starttime="20181129 10:34:38.461">Test case failed... != Test case passed...</status>
+</test>
+<status status="FAIL" endtime="20181129 10:35:14.019" starttime="20181129 10:32:36.562"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="3">Critical Tests</stat>
+<stat fail="1" pass="3">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">music_identifier</stat>
+<stat fail="0" pass="2">Text_Match</stat>
+<stat fail="0" pass="1">volume_checker</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Vam Automate Generate" pass="3">Vam Automate Generate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

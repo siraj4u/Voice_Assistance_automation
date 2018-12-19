@@ -1,0 +1,8 @@
+1,what is the time in bangalore,1,NULL,1,vam_record_transcribe,time;a.m;p.m;bangalore;bengaluru,the time in Bengaluru is 2 pm,shows time in Bengaluru,Pass
+2,what is the weather in bangalore,1,NULL,1,vam_record_transcribe,weather;rain;bengaluru;bangalore;cloudy;thunderstorms;temperature;forecast,Right now in Bengaluru cloudy,Its raining in Bengaluru,Pass,Its raining in,weather.wav,1
+2,what is the weather in bangalore,1,NULL,1,vam_record_transcribe,None,Right now in Bengaluru cloudy,Its raining in Bengaluru,Pass,Its raining in,weather.wav,1
+3,what is the date today,1,NULL,1,vam_record_transcribe,2018;wednesday;thursday;friday;monday;tuesday,it will tell today date,Pass
+4,set the volume to thirty percent,1,NULL,1,vam_volume_up,tell me about california,set the volume to ninety percent
+5,set the volume to ninety percent,1,NULL,1,vam_volume_down,tell me about california,set the volume to thirty percent
+6,remind me about shopping after 1 minutes,1,NULL,1,vam_alarm_transcribe,yes;i;have;a;reminder;for;siraj,1,ok;reminder set;p.m.;a.m.;do;you;want;to;save;it
+7,"play lungi dance on gaana",1,my_command.wav,1,vam_record_identify_music,songtitle.wav,yo yo honey singh;lungi dance,

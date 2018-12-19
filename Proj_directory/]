@@ -1,0 +1,34 @@
+*** Settings ***
+Library         OperatingSystem
+Library         String
+Library         vam_automate.py
+
+*** Keywords ***
+
+test_case_result
+        ${Result}=    Get File    result_file.txt
+	
+
+*** Test Cases ***
+For-Loop-Elements
+| | @{Items} =                    | Create List | ${120} | ${240} | ${240} 
+| | :FOR                          | ${ELEMENT} | IN | @{ITEMS}
+| | | Log To Console              | Running tests at Voltage: ${ELEMENT}
+| | | test_case_result
+
+
+
+*** Comment *** 
+
+test file
+	 ${TextFileContent}=    Get File    vaf_test_cases.csv
+   	 :FOR  ${data}  IN   ${TextFileContent}
+    	 \      @{lines}=    Split to lines    ${data}
+        	:FOR    ${test_data}    IN    @{lines}
+        	\       testcases    ${test_data}
+        	\       test_case_result
+
+
+
+
+ 
